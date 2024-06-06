@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div id="cont"></div>
+    </body>
+    <script>
+       const imgs=[
+       "logo.jpg", "logo.jpg", "logo.jpg"
+       ];
+        const cont=document.getElementById("cont");
+       function render(){
+           let dom="";
+           for(let i=0;i<imgs.length;i++){
+               dom+=`<img alt="no image!!!" src="${imgs[i]}"> `;
+           }
+           cont.innerHTML=dom;
+       } 
+       render()
+    </script>
+</html>

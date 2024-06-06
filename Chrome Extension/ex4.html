@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+
+    </body>
+    <script>
+       function generateSentence(p1,p2){
+           let base=`The ${p2.length} ${p1} `;
+           let h=p2.length-1;
+           for(let i=0;i<p2.length;i++){
+               if(i===h){
+                   base+=p2[i];
+               }
+               else{
+               base+=p2[i]+", ";
+           }}
+           return base;
+       }
+       let g=generateSentence("largest Countries are ",["China","India"]);
+       console.log(g);
+    </script>
+</html>
